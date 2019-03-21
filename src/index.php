@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php if(!isset($_SESSION['user_id'])) $_SESSION['user_id'] =  uniqid('md_'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>My first BootstrapVue app</title>
+    <title>Finance Application</title>
 
     <!-- Required Stylesheets -->
-    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap-vue/dist/bootstrap-vue.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-vue.min.css">
 
     <!-- Required scripts -->
-    <script src="node_modules/vue/dist/vue.min.js"></script>
-    <script src="node_modules/bootstrap-vue/dist/bootstrap-vue.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/bootstrap-vue.min.js"></script>
 
     <!-- Project Stylesheets -->
 

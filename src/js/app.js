@@ -14,7 +14,10 @@ window.methods = {};
 // TODO: move these into their own .vue files
 /* Templates */
 Vue.component('app-main', {
-    template:  '<h1>Hello World!</h1>'
+    data: function(){
+        return data;
+    },
+    template:  '<h1>Hello: </h1>'
 });
 
 /* Application */
