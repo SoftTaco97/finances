@@ -1,16 +1,19 @@
 <template>
   <div>
-      <b-container fluid>
+      <b-container fluid v-if="showCard">
           <b-row>
             <b-col xs="12">
-                <b-card :title="Title">
+                <b-card :title="title">
                     <b-card-text class="w-100">
-                        {{Desc}}
+                        {{desc}}
                     </b-card-text>
                     <b-card-text class="float-left ml-2">
-                        ${{Amount}}
+                        ${{amount}}
                     </b-card-text>
-                    <b-button variant="secondary" class="float-right">x</b-button>
+                    <b-button @click="deleteCard" 
+                              variant="secondary" 
+                              class="float-right">x
+                    </b-button>
                 </b-card>
             </b-col>
           </b-row>
@@ -20,13 +23,21 @@
 
 <script>
     export default {
-        name: 'FinanceCard',
+        name: 'appFinanceCard',
+        data: function(){
+            return {
+                showCard: true
+            }
+        },
         props: {
-            Amount: Number,
-            Title: String,
-            Desc: String,
+            amount: Number,
+            title: String,
+            desc: String,
         },
         methods: {
+            deleteCard: function(){
+                this.showCard = false
+            }
         }
     }
 </script>

@@ -1,22 +1,13 @@
 <template>
     <div id="app">
-      <appMain></appMain>
+      <router-view />
     </div>
 </template>
 
 <script>
-  // Main Page
-  import appMain from './components/Main.vue';
-
-  // Login Page
-  import appLoginScreen from './components/LoginScreen.vue';
 
   export default {
     name: 'app',
-    components: {
-      appMain,
-      appLoginScreen
-    }
   }
 </script>
 

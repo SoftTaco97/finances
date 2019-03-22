@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: 'LoginScreen',
+  name: 'appLoginScreen',
   data: function(){
     return {
       email: '',
@@ -62,7 +62,6 @@ export default {
     formSubmit: function(event){
       /* Stopping the Form from submitting */
       event.preventDefault();
-      console.log('working');
 
       /* Removing form, showing spinner */
       this.showForm = false;
