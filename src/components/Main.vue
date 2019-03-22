@@ -1,17 +1,16 @@
 <template>
-  <div>
-      <b-container>
-          <appFinanceCard :amount=1000
-                       title="Test Card"
-                       desc="Test card"
-                       />
-      </b-container>
-  </div>
+    <div>
+        <b-nav tabs class="float-right">
+        <b-nav-item active><router-link to="/app/">App</router-link></b-nav-item>
+        <b-nav-item><router-link to="/login/">Login</router-link></b-nav-item>
+        </b-nav>
+        <appFinance></appFinance>
+    </div>
 </template>
 
 <script>
     // Finance Template
-    import appFinanceCard from './FinanceCard.vue';
+    import appFinance from './Finances.vue';
     // Income Template
     // import IncomeCard from './IncomeCard.vue'
     export default {
@@ -23,7 +22,7 @@
         methods: {
         },
         components: {
-            appFinanceCard
+            appFinance
         }
     }
 </script>

@@ -1,5 +1,9 @@
 <template>
   <div>
+    <b-nav tabs class="float-right">
+      <b-nav-item><router-link to="/app/">App</router-link></b-nav-item>
+      <b-nav-item active><router-link to="/login/">Login</router-link></b-nav-item>
+    </b-nav>
     <b-container>
         <h1 class="display-4">Login</h1>
         <b-alert variant="danger" 
