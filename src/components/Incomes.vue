@@ -2,8 +2,8 @@
   <div>
     <b-container>
         <appIncomeCard :amount=1000
-                    title="Test Card"
-                    desc="Test card"
+                    title="Income Card"
+                    desc="Income card"
                     />
     </b-container>
   </div>

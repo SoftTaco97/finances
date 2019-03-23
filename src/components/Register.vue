@@ -1,11 +1,7 @@
 <template>
   <div>
-    <b-nav tabs class="float-right">
-      <b-nav-item><router-link to="/app/">App</router-link></b-nav-item>
-      <b-nav-item active><router-link to="/login/">Login</router-link></b-nav-item>
-    </b-nav>
     <b-container>
-        <h1 class="display-4">Login</h1>
+        <h1 class="display-4">Register</h1>
         <b-alert variant="danger" 
                 dismissible 
                 v-model="showError"
@@ -38,11 +34,24 @@
               />
           </b-form-group>
 
+        <b-form-group id="confirmPasswordGroup" 
+                        label="Confirm Your Password:" 
+                        label-for="confirmPassword"
+                        >
+            <b-form-input id="confirmPassword"
+                          type="password"
+                          v-model="confirmPassword"
+                          required
+                          placeholder="Confirm Password" 
+              />
+          </b-form-group>
+
           <b-button type="submit" 
                     variant="primary"
                     >
                     Submit
           </b-button>
+          <span class="form-text text-muted pt-3">Already have an account? <router-link to='/login/'>Login Here</router-link></span>
       </b-form>
       <b-spinner label="Loading..." v-if="showSpinner"/>
     </b-container>

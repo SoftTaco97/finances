@@ -1,23 +1,30 @@
 <template>
     <div>
-        <b-nav tabs class="float-right">
-        <b-nav-item><router-link to="/login/">Login</router-link></b-nav-item>
-        </b-nav>
-       <b-card no-body>
-            <b-tabs pills card vertical>
-                <b-tab title="Expenses">
-                    <b-card-text>
-                        <appExpenses/>
-                    </b-card-text>
-                </b-tab>
-                <b-tab title="Incomes">
-                    <b-card-text>
-                        <appIncomes/>
-                    </b-card-text>
-                </b-tab>
-            </b-tabs>
-        </b-card>
-
+        <b-container fluid>
+            <b-row>
+                <b-col sm="11">
+                    <b-tabs card>
+                        <b-tab title="Expenses">
+                            <b-card-text>
+                                <appExpenses/>
+                            </b-card-text>
+                        </b-tab>
+                        <b-tab title="Incomes">
+                            <b-card-text>
+                                <appIncomes/>
+                            </b-card-text>
+                        </b-tab>
+                    </b-tabs>
+                </b-col>
+                <b-col sm="1">
+                    <b-button variant="primary" class="float-left">
+                        <router-link to="/login/" style="color: white;">
+                            Login
+                        </router-link>
+                    </b-button>
+                </b-col>
+            </b-row>
+        </b-container>
     </div>
 </template>
 
