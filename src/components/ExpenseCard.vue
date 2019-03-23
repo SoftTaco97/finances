@@ -21,7 +21,7 @@
 
 <script>
     export default {
-        name: 'appFinanceCard',
+        name: 'appExpenseCard',
         data: function(){
             return {
                 showCard: true

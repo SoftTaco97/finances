@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-container>
-        <appFinanceCard :amount=1000
+        <appIncomeCard :amount=1000
                     title="Test Card"
                     desc="Test card"
                     />
@@ -10,17 +10,17 @@
 </template>
 
 <script>
-    // Finance Card Template
-    import appFinanceCard from './FinanceCard.vue';
+    // Income Card Template
+    import appIncomeCard from './IncomeCard.vue';
 
     export default {
-        name: 'appFinances',
+        name: 'appIncomes',
         data: function(){
             return {}
         },
         props: {},
         components: {
-            appFinanceCard
+            appIncomeCard
         }
     }
 </script>
