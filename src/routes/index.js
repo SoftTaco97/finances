@@ -1,8 +1,8 @@
 import Router from 'vue-router';
-import appMain from './components/Main.vue';
-import appLogin from './components/Login.vue';
-import appRegister from './components/Register.vue';
-import app404 from './components/404.vue';
+import appMain from '../components/Main.vue';
+import appLogin from '../components/Login.vue';
+import appRegister from '../components/Register.vue';
+import app404 from '../components/404.vue';
 
 const routes = [
   {

@@ -10,7 +10,7 @@
                     ${{amount}}
                 </b-card-text>
                 <b-button @click="deleteCard" 
-                            variant="secondary" 
+                            variant="primary" 
                             class="float-right">x
                 </b-button>
             </b-card>

@@ -65,6 +65,7 @@ export default {
     return {
       email: '',
       password: '',
+      confirmPassword: '',
       showForm: true,
       showSpinner: false,
       showError: false,
