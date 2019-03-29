@@ -55,11 +55,19 @@
              *  Function to get if the user is logged in 
              */
             getLoggedIn(){
+                // Getting Parameters 
+                const params = new FormData();
+                params.append('request_type', 'user_logged_in');
+
                 /* Making API Call */
-                // this.$http.get('https://www.google.com/')
-                // .then(response => {
-                //     // console.log(response);
-                // });
+                this.$http({
+                    method: 'POST',
+                    url: '../server/',
+                    data: params
+                })
+                .then(response => {
+                    this.isLoggedIn = response.data.user_logged_in;
+                });
             },
             /**
              * Function to change the main area's width based on if the user is logged in
