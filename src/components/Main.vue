@@ -62,7 +62,7 @@
                 /* Making API Call */
                 this.$http({
                     method: 'POST',
-                    url: '../server/',
+                    url: './server/',
                     data: params
                 })
                 .then(response => {
